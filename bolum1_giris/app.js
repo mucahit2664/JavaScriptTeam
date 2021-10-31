@@ -74,6 +74,118 @@ console.log(typeof dil);//object
 // *                 ARİTMETİK OPERATÖRLER
 // * =======================================================
 
+const tatli = 120;
+const ice =20;
+const cola =5;
+
+let toplamFiyat=tatli + ice +cola;
+//console.log(toplamFiyat);
+
+console.log(toplamFiyat,cola);
+
+console.log("TOPLAM: " + toplamFiyat);
+
+const ad ="Mucahit";
+const soyAd = "Sivasligil";
+console.log(ad + soyAd);
+console.log(ad +" "+ soyAd);
+
+console.log(`Benim adim  ${ad} soyadim ${soyAd}`);
+
+
+const yil =2021;
+const dogumTarihi =1992;
+const sene =yil -dogumTarihi;
+
+console.log("Yas:" +sene);//TODO sonucu sene degiskenine atayarak yazdirma
+console.log("Yas:" + yil - dogumTarihi);//! Hata--> NaN=Not a Number
+console.log("Yas:" + (yil - dogumTarihi));//? Normal yazdirma
+console.log(`Benim yasim : ${yil-dogumTarihi}      dur`);//* Template literal
+
+//? Us alma operatoru
+const taban =2 ;
+const us =10;
+const sonuc =taban **us;
+console.log(sonuc);
+
+//? Mod alma(%)
+const sayi =123;
+const birler =sayi %10;
+const onlar =Math.floor(sayi / 10) %10;
+const yuzler=Math.floor(sayi/100) ;
+
+console.log(`Birler: ${birler}`);
+console.log(`Onlar: ${onlar} `);
+console.log(`Yuzler: ${yuzler}`);
+
+let a =20;//20
+let b =++a;//21
+let c =--a;//20
+console.log(`sayilarimiz : ${a} ,${b}, ${c} dir`);
+
+// * =======================================================
+// *         KARŞILAŞTIRMA ve LOJİK OPERATÖRLER
+// * =======================================================
+// ! 3'lü karşılaştırma operatörü kullanıldığında hem veri tipi hem de 
+// ! içerik kontrolü yapılır.
+const sayi1 = 100;
+const sayi2 = "100";
+
+console.log(typeof sayi1,typeof sayi2);
+console.log(sayi1==sayi2);//true
+console.log(sayi1===sayi2);//false
+
+
+console.log(sayi1 !==sayi2);//? veritipi ve rakamlar-true
+console.log(sayi1 != sayi2);//? Sadece rakamlar--false
+
+const s1 = 5;
+const s2 = -7;
+const isim22 = "Mucahit";
+console.log(Boolean(isim));//true
+
+const x = true;
+const y = true;
+const z = undefined;
+
+console.log(x && y && z);
+
+// * =======================================================
+// *                      TERNARY
+// * =======================================================
+
+
+//const age13   = +(prompt("Yasinzi  giriniz: "));
+const name1 = prompt("Adinizi  giriniz: ");
+const age   = Number(prompt("Yasinzi  giriniz: "));
+//TODO GOSTERIM-1
+age >=18 
+? console.log(`${name1} ehliyet alabilir`)
+: console.log(`${name1} ehliyet alamaz`);
+//TODO GOSTERIM-2
+const result =
+age >= 18 ? `${name1} ehliyet alabilir` : `${name1} ehliyet alamaz`;
+
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
