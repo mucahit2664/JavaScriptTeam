@@ -82,17 +82,15 @@ fiyatlar.forEach((f) =>(toplam +=f));
 console.log(toplam);
 document.querySelector(".toplam").innerHTML = `${toplam} TL` ;
  
-
-
-
-
-
-
-
 // ======================================================
 //                       MAP METODU
 // ======================================================
 //-------------- ÖRNEK -------------------
+// ornek=Dizinin her bir elemaninin 5 katini aliniz Please
+const rakamlar =[3,5,8,3,-2,5,-7,9];
+const besKat=rakamlar.map((x) =>x* 5);
+console.log(besKat);
+console.log(rakamlar);
 
 
 
