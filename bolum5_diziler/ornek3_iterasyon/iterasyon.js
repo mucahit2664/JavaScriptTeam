@@ -152,6 +152,46 @@ console.log(tlFiyatlar.sort((a,b)=>a-b));
 //                       PIPELINE
 // ======================================================
 //-------------- ÖRNEK -------------------
+// maası 4000 $'dan düsük olanlara %50 zam yapmak istiyoruz
+// ve bunu ayri dizi olarak saklamak istiyoruz.
+
+const maaslar=[3000,5000,4000,6000,6500,2500];
+
+const zamliMaaslar = maaslar
+  .filter((muc) => muc <= 4000)
+  .map((muc) => muc * 1.5);
+console.log(zamliMaaslar);
+
+//Maasi 4000'den buyuk olanlara %25 zam yaparak sonuclari yazdiralim.
+maaslar
+.filter((a) =>a >4000 )
+.map((a) =>a*1.25)
+.forEach((a) =>console.log(a));
+
+//-------------- ÖRNEK -------------------
+const adlar = [
+  "Samet",
+  "Hakkı",
+  "Duygu",
+  "Emrullah",
+  "Bilal",
+  "Ali",
+  "Ahmet",
+  "Hasan",
+  "Defne",
+  "Serdar",
+];
+
+const isimBul=(harf) =>{
+  const buyukHarf =harf.toUpperCase();
+adlar.filter((c)=>c.startsWith(buyukHarf)).forEach((x) =>console.log(x));
+};
+isimBul("a");
+isimBul("E");
+isimBul("s");
+//isimBul("d");
+
+
 // ======================================================
 //                       REDUCE METODU
 // ======================================================
