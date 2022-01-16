@@ -228,3 +228,28 @@ isimBul("s");
 // ======================================================
 //                       REDUCE METODU
 // ======================================================
+//!const mmaslar=[3000,5000,4000,6000,6500,2500];
+
+const toplamMaas=maaslar.reduce((x ,y)=>x+y,0 );
+
+console.log(toplamMaas);
+
+const toplamMaas1=maaslar.reduce((x,y,length)=>{
+  console.log(`${length} iterasyon : ${x}`)
+return x+y;
+});
+console.log(toplamMaas1);
+
+//!4000`den buyuk olan  maaslarin toplamni hesapalayiniz
+const buyukDortBin=maaslar.filter((c)=>c>4000).reduce((a,b)=>a+b,0);
+console.log(buyukDortBin);
+
+//Maasi ortalamanin altinda olanalra %20 zam yapalim
+//!burda ortalama aldik
+const ortalamaMaas= maaslar.reduce((z,y)=>z+y,0)/maaslar.length;
+console.log(ortalamaMaas);
+//!burda da ortalama altinda olanalra %20 zam yaptik
+const yeniMaaslar=maaslar.filter((k)=>k<ortalamaMaas).map((m)=>m*1.2);
+console.log(yeniMaaslar);
+
+
